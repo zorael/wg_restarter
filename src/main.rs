@@ -17,11 +17,11 @@ struct Cli {
     timeout: time::Duration,
 
     /// Loop interval in seconds
-    #[arg(short = 'L', long, value_parser = humantime::parse_duration, default_value = "60s")]
+    #[arg(short = 'l', long, value_parser = humantime::parse_duration, default_value = "60s")]
     loop_interval: time::Duration,
 
     /// Retry interval after unit restart in seconds
-    #[arg(short = 'R', long, value_parser = humantime::parse_duration, default_value = "30s")]
+    #[arg(short = 'r', long, value_parser = humantime::parse_duration, default_value = "30s")]
     retry_after_unit_restart: time::Duration,
 
     /// WireGuard interface to monitor
